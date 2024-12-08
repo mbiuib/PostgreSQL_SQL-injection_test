@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-light">
+    <div class="container mt-5">
+        <h2 class="text-center">Настройки</h2>
+        <div class="text-center mt-4">
+            <p>Защита от SQL-инъекций:
+                <strong class="{{ 'text-success' if protection else 'text-danger' }}">
+                    {{ 'Включена' if protection else 'Выключена' }}
+                </strong>
+            </p>
+            <a href="/toggle_protection" class="btn btn-warning">
+                {{ 'Выключить' if protection else 'Включить' }} защиту
+            </a>
+        </div>
+        <div class="text-center mt-5">
+            <a href="/" class="btn btn-primary">На главную</a>
+        </div>
+    </div>
+</body>
+</html>

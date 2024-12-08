@@ -1,0 +1,45 @@
+/* Основной стиль для темной темы */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+form {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+input {
+    border: 1px solid #444;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 5px #1a73e8;
+}
+
+.btn-primary {
+    background-color: #1a73e8;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #135cb8;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+a.text-info:hover {
+    text-decoration: underline;
+}
